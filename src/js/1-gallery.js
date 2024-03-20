@@ -86,9 +86,6 @@ images.forEach(image => {
 });
 
 // Modal
-  // import SimpleLightbox from "simplelightbox";
-  // import "simplelightbox/dist/simple-lightbox.min.css";
-  
   const modal = new SimpleLightbox('.gallery-link', {
     captionsData: 'alt',
     captionsDelay: 250,
