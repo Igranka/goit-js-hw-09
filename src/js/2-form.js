@@ -6,12 +6,12 @@ const localStorageKey = "feedback-form-state";
 const savedData = JSON.parse(localStorage.getItem(localStorageKey));
 
 email.value = (savedData && savedData.email) ? savedData.email : "";
-textarea.value = (savedData && savedData.text) ? savedData.text : "";
+textarea.value = (savedData && savedData.message) ? savedData.message : "";
 
 form.addEventListener("input", (event) => {
     localStorage.setItem(localStorageKey, JSON.stringify({
         email: email.value.trim(),
-        text: textarea.value.trim(),
+        message: textarea.value.trim(),
     }));
 });
 
